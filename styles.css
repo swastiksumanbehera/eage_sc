@@ -1,0 +1,23 @@
+.text_announcement{
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+}
+    
+.scrolling-text {
+    position: absolute;
+    margin-left: 6px;
+    animation: scroll-up 20s linear infinite;
+}
+
+    
+@keyframes scroll-up {
+    0% { top: 100px; }
+    100% { top: -100%; }
+}
+
+.announcement-header{
+    color: white;
+    background-color: #008f70;
+    border-radius: 0px 0px 0px 0px;
+}
