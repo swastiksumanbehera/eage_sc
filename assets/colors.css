@@ -14,11 +14,12 @@
 
 .us-box{
         color: black;
-        border-radius: 25px 25px 25px 25px;
-        border-color: black;
-        background-color: #f8f9fa;
-        border-style: solid;
-        border-width: medium;
+        /*border-radius: 25px 25px 25px 25px;
+        border-color: black;*/
+        background-color: #e7f8f3;
+        /*border-style: solid;
+        border-width: medium;*/
+        padding-left: 10px;
 }
 
 .contact-box{
@@ -94,11 +95,13 @@
     color: #008f70;
 }
 
+.marq{
+    
+}
 
-
-
-
-
+.team-color{
+    background-color: #008f70;
+}
 
 
 

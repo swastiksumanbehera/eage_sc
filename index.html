@@ -19,7 +19,7 @@
 <!--header-->
 <!--Check the alignment of the image again (non-responsive)-->
 <div class="row justify-content-center header-theme">
-    <div class="col-2 justify-content-center d-none d-lg-block py-2 align-items-center">
+    <div class="col-2 mx-1 justify-content-center d-none d-lg-block py-2 align-items-center">
         <img src="assets/logo.jpeg" alt="eagesc logo" style="height: 90px; width:auto;">
     </div>
     <div class="col justify-content-center py-2">
@@ -34,7 +34,7 @@
             </h4>
         </div>
     </div>
-    <div class="col-2 justify-content-center d-none d-lg-block py-2 align-items-center">
+    <div class="col-2 mx-1 justify-content-center d-none d-lg-block py-2 align-items-center">
         <img src="assets/invisible_logo.png" alt="" style="height: 90px; width:auto;">
     </div>
 </div>
@@ -75,7 +75,7 @@
 
 <!--main content-->
 <!--aspect ratio of image (4x1) landscape-->
-<div class="row border justify-content-center">
+<div class="row justify-content-center">
     <div class="d-lg-10 col-12 justify-content-center">
         <div id="eagesc-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-slide="false">
             <div class="carousel-indicators">
@@ -110,11 +110,11 @@
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#eagesc-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon" style="background-color: #767676;" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#eagesc-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon" style="background-color: #767676;" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -123,9 +123,9 @@
 
 <div class="row my-2 justify-content-center">
     <div class="col-8 justify-content-center">
-        <div class="row mx-1 py-2 justify-content-center us-box">
+        <div class="row py-2 justify-content-center us-box">
             <p style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
-                <strong style="color: #008f70;">Welcome to the website of EAGE Student Chapter @ IIT-Kanpur!</strong> 
+                <strong style="color: #008f70;">Welcome to the official website of the EAGE Student Chapter @ IIT-Kanpur!</strong> 
             </p>
             <p style="text-align: justify; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
                 The European Association of Geoscientists and Engineers (<a href="https://eage.org/" target="_blank" style="text-decoration: none; color: #008f70;">EAGE</a>) is a global organization dedicated to advancing the fields of geophysics, geology, and petroleum exploration. The objectives of EAGE are “to promote the development and application of geosciences and related engineering subjects, to promote innovation and technical progress and to foster the communication, fellowship, and cooperation between those working in, studying or otherwise being interested in these fields”. We are fully aligned with these objectives of EAGE. <br>
@@ -158,7 +158,7 @@
                 Announcements
             </span>
         </div>
-        <div class="text_announcement">
+        <!--<div class="text_announcement">
             <div class="scrolling-text">
                 <p>Welcome to the official Website of <b>EAGE IIT Kanpur</b>.</p>
                 <p>Quizes related to geology and geophysics are posted on our official <a href="https://www.linkedin.com/company/eage-student-chapter-iit-kanpur/">LinkedIn page.</a> Please follow our page.</p>
@@ -166,6 +166,16 @@
                 <p>Congratulations to <b>Mr. Gourav Jaiswal</b> for the selection of his paper for oral presentation at Annual EAGE 2024 conference (<b>Paper title:</b> "Advancing Seismic Facies Classification: A comparative Deep Learning Approach.")</p>  
                 <p>Congratulations to <b>Mr. Pratik Chougule</b> for the selection of his paper for poster presentation at Annual EAGE 2024 conference (<b>Paper title:</b> "Deep learning assisted 2-D current density modelling of very low frequency electromagnetic data.")</p>                
             </div>
+        </div>-->
+        <div class="row px-1 justify-content-center">
+            <p style="margin-left: 6px;">
+                Quizes related to geology and geophysics are posted on our official <a href="https://www.linkedin.com/company/eage-student-chapter-iit-kanpur/">LinkedIn page.</a>
+            </p>
+            <marquee behavior="scroll" direction="up" loop="-1" class="marq" style="margin-left: 6px;" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
+                    <p>Congratulations to <b>Mr. Vikas Vats</b> for the selection of his paper for poster presentation at the Annual EAGE 2024 conference (<b>Paper title:</b> "Integrating Particle Swarm Optimization in a Hybrid Approach to Address FWI Non-linearity.")</p>         
+                    <p>Congratulations to <b>Mr. Gourav Jaiswal</b> for the selection of his paper for oral presentation at the Annual EAGE 2024 conference (<b>Paper title:</b> "Advancing Seismic Facies Classification: A comparative Deep Learning Approach.")</p>  
+                    <p>Congratulations to <b>Mr. Pratik Chougule</b> for the selection of his paper for poster presentation at the Annual EAGE 2024 conference (<b>Paper title:</b> "Deep learning assisted 2-D current density modelling of very low frequency electromagnetic data.")</p>
+            </marquee>
         </div>
     </div>
 </div>
