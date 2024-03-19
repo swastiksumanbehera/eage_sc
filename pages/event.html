@@ -18,30 +18,32 @@
 <body>
     <!--header-->
     <!--Check the alignment of the image again (non-responsive)-->
-    <div class="row justify-content-center header-theme">
-        <div class="col-2 mx-1 justify-content-center d-none d-lg-block py-2 align-items-center">
-         <img src="../assets/logo.jpeg" alt="eagesc logo" style="height: 90px; width:auto;">
-        </div>
-        <div class="col justify-content-center py-2">
-            <div class="row justify-content-center">
-                <h1 style="text-align: center; font-family: Plantin Infant MT Std Bold;">
-                    <b>EAGE STUDENT CHAPTER</b>
-                </h1>
+    <div class="row justify-content-center header-theme-top">
+        <div class="row justify-content-center">
+            <div class="col-2 mx-1 justify-content-center d-none d-lg-block py-2 align-items-center">
+                <img src="../assets/logo.jpeg" alt="eagesc logo" style="height: 90px; width:auto;">
             </div>
-            <div class="row justify-content-center">
-                <h4 style="text-align: center; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
-                    INDIAN INSTITUTE OF TECHNOLOGY KANPUR
-                </h4>
+            <div class="col justify-content-center py-2">
+                <div class="row justify-content-center">
+                    <h1 style="text-align: center; font-family: Plantin Infant MT Std Bold;">
+                        <b>EAGE STUDENT CHAPTER</b>
+                    </h1>
+                </div>
+                <div class="row justify-content-center">
+                    <h4 style="text-align: center; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                        INDIAN INSTITUTE OF TECHNOLOGY KANPUR
+                    </h4>
+                </div>
             </div>
-        </div>
-        <div class="col-2 mx-1 justify-content-center d-none d-lg-block py-2 align-items-center">
-            <img src="../assets/invisible_logo.png" alt="" style="height: 90px; width:auto;">
+            <div class="col-2 mx-1 justify-content-center d-none d-lg-block py-2 align-items-center">
+                <img src="../assets/invisible_logo.png" alt="" style="height: 90px; width:auto;">
+            </div>
         </div>
     </div>
 
     <!--navbar-->
-    <nav class="navbar px-2 navbar-light sticky-top navbar-expand-sm rounded border" style="background-color: #414042; border-color: #767676;">
-        <a href="index.html" class="navbar-brand h1 d-sm-none">
+    <nav class="navbar navbar-light sticky-top navbar-expand-sm header-theme-top">
+        <a href="../index.html" class="navbar-brand h1 d-sm-none">
             <i class="fa-solid fa-house-chimney" style="color: white;"></i>
         </a>
         <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,23 +51,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item px-5 d-sm-block">
-                    <a href="../index.html" class="nav-link" style="font-family: Arial, Helvetica, sans-serif; color: white; font-size: 16px;">
+                <li class="nav-item px-5 d-sm-block li_navbar">
+                    <a href="../index.html" class="nav-link a_navbar" style="color: white;">
                         <b>Home</b>
                     </a>
                 </li>
-                <li class="nav-item px-5 d-sm-block">
-                    <a href="../pages/teams1.html" class="nav-link inactive" style="font-family: Arial, Helvetica, sans-serif; color: white; font-size: 16px;">
+                <li class="nav-item px-5 d-sm-block li_navbar">
+                    <a href="../pages/teams1.html" class="nav-link a_navbar" style="color: white;">
                         <b>Team</b>
                     </a>
                 </li>
-                <li class="nav-item px-5 d-sm-block">
-                    <a href="../pages/event.html" class="nav-link inactive" style="font-family: Arial, Helvetica, sans-serif; color: #008f70; font-size: 16px;">
+                <li class="nav-item px-5 d-sm-block li_navbar active_navbar">
+                    <a href="../pages/event.html" class="nav-link a_navbar" style="color: white;">
                         <b>Events</b>
                     </a>
                 </li>
-                <li class="nav-item px-5 d-sm-block">
-                    <a href="../pages/gallery.html" class="nav-link inactive" style="font-family: Arial, Helvetica, sans-serif; color: white; font-size: 16px;">
+                <li class="nav-item px-5 d-sm-block li_navbar">
+                    <a href="../pages/gallery.html" class="nav-link a_navbar" style="color: white;">
                         <b>Gallery</b>
                     </a>
                 </li>
@@ -73,9 +75,18 @@
         </div>
     </nav>
     
+    <!--header-->
+    <div class="row justify-content-center header-theme-bottom">
+        <div class="col justify-content-center py-2">
+            <h2 style="text-align: center; font-family: Plantin Infant MT Std Bold;">
+                <b>EVENTS AND TALKS</b>
+            </h2>
+        </div>
+    </div>
     
-<button class="accordion" >Upcoming Events</button>
+<button class="accordion">Upcoming Events</button>
 <div class="panel">
+
 </div>
 
 <button class="accordion">Past Events</button>
@@ -109,7 +120,7 @@ for (i = 0; i < acc.length; i++) {
 
 
     <!--footer-->
-    <div class="row py-2 header-theme justify-content-center">
+    <div class="row py-2 header-theme-bottom justify-content-center">
         <div class="col justify-content-center">
             <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">
                 <a href="https://www.iitk.ac.in/es/" target="_blank" style="color: white; text-decoration:solid;"><b>Earth Sciences</a></b>
