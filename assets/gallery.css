@@ -120,3 +120,13 @@ h5 {
 .row > .column {
   padding: 8px;
 }
+
+.gal-open-font{
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 700px) {
+  .gal-open-font{
+    font-size: 18px;
+  }
+}
