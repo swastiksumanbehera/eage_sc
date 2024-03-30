@@ -46,11 +46,27 @@ h1 {
   padding: 8px;
 }
 
+.header-row {
+  padding: 0px;
+}
+
 /* Create three equal columns that floats next to each other */
 .column {
-  float: left;
+  float: ;
   width: 33.33%;
   display: none; /* Hide all elements by default */
+}
+
+@media only screen and (max-width: 900px) {
+  .column{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .column{
+    width: 100%;
+  }
 }
 
 /* Clear floats after rows */ 
@@ -92,18 +108,18 @@ h1 {
 </head>
 <!--header-->
     <!--Check the alignment of the image again (non-responsive)-->
-    <div class="row justify-content-center header-theme-top">
-        <div class="row justify-content-center">
+    <div class="row header-row justify-content-center header-theme-top">
+        <div class="row header-row justify-content-center">
             <div class="col-2 mx-1 justify-content-center d-none d-lg-block py-2 align-items-center">
                 <img src="../assets/logo.jpeg" alt="eagesc logo" style="height: 90px; width:auto;">
             </div>
             <div class="col justify-content-center py-2">
-                <div class="row justify-content-center">
+                <div class="row header-row justify-content-center">
                     <h1 style="text-align: center; font-family: Plantin Infant MT Std Bold;">
                         <b>EAGE STUDENT CHAPTER</b>
                     </h1>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row header-row justify-content-center">
                     <h4 style="text-align: center; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
                         INDIAN INSTITUTE OF TECHNOLOGY KANPUR
                     </h4>
@@ -149,7 +165,7 @@ h1 {
     </nav>
 
     <!--header-->
-    <div class="row justify-content-center header-theme-bottom">
+    <div class="row header-row justify-content-center header-theme-bottom">
         <div class="col justify-content-center py-2">
             <h2 style="text-align: center; font-family: Plantin Infant MT Std Bold;">
                 <b>EVENTS GALLERY</b>
@@ -178,26 +194,26 @@ h1 {
 <div class="row">
   <div class="column Conf_part">
     <div class="content">
-      <img src="../assets/gourav.png" alt="Mountains" style="width:100%">
+      <img src="../assets/gourav.png" alt="" style="width:100%">
       <h4 style="text-align: center; padding-top: 2vh;">Gourav Jaiswal</h4>
       <p style="text-align: center; padding-top: 2vh;">Oral Presentation @ EAGE Annual Conference 2024</p>
-      <p style=" text-align: justify; text-justify: inter-word; padding-bottom: 3.2vh;">Title: Advancing Seismic Facies Classification: A comparative Deep Learning Approach.</p>
+      <p style=" text-align: justify; text-justify: inter-word; padding-bottom: 3.2vh;"><b>Title:</b> Advancing Seismic Facies Classification: A comparative Deep Learning Approach.</p>
     </div>
   </div>
   <div class="column Conf_part">
     <div class="content">
-    <img src="../assets/vikas.jpg" alt="Lights" style="width:100%">
+    <img src="../assets/vikas.jpg" alt="" style="width:100%">
       <h4 style="text-align: center; padding-top: 2vh;">Vikas Vats</h4>
       <p style="text-align: center; padding-top: 2vh;">Poster Presentation @ EAGE Annual Conference 2024</p>
-      <p style=" text-align: justify; text-justify: inter-word;">Title: Integrating Particle Swarm Optimization in a Hybrid Approach to Address FWI Non-linearity. </p>
+      <p style=" text-align: justify; text-justify: inter-word;"><b>Title:</b> Integrating Particle Swarm Optimization in a Hybrid Approach to Address FWI Non-linearity. </p>
     </div>
   </div>
   <div class="column Conf_part">
     <div class="content">
-    <img src="../assets/pratik.jpg" alt="Nature" style="width:100%">
+    <img src="../assets/pratik.jpg" alt="" style="width:100%">
       <h4 style="text-align: center; padding-top: 2vh;">Prateek Chougule</h4>
       <p style="text-align: center; padding-top: 2vh;">Poster Presentation @ EAGE Annual Conference 2024</p>
-      <p style=" text-align: justify; text-justify: inter-word;">Title: Deep learning assisted 2-D current density modelling of very low frequency electromagnetic data.</p>
+      <p style=" text-align: justify; text-justify: inter-word;"><b>Title:</b> Deep learning assisted 2-D current density modelling of very low frequency electromagnetic data.</p>
     </div>
   </div>
 <!-- END GRID -->
