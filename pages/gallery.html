@@ -101,10 +101,42 @@
           <button class="btn" onclick="filterSelection('Tk')" style="font-size: larger;"> Talks</button>
           <button class="btn" onclick="filterSelection('wksp')" style="font-size: larger;"> Workshops</button>
           <button class="btn" onclick="filterSelection('event')" style="font-size: larger;"> Fun Events</button>
-          <button class="btn" onclick="filterSelection('Conf_part')" style="font-size: larger;"> Conference Participations</button>
+          <button class="btn" onclick="filterSelection('Conf_part')" style="font-size: larger;"> Conference_Participations</button>
         </div>
-    </div>
         
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column Conf_part">
+                <div class="content">
+                  <img src="gourav.png" alt="Mountains" style="width:100%; aspect-ratio:auto; justify-content: center">
+                  <h3>Gourav Jaiswal</h3>
+                  <p style="text-align: justify; text-justify: auto;">Oral Presentation @ EAGE Annual Conference 2024</p>
+                  <p style="text-align: justify; text-justify: auto;">Title: Advancing Seismic Facies Classification: A comparative Deep Learning Approach.</p>
+                </div>
+              </div>
+              
+              <div class="column Conf_part">
+                <div class="content">
+                  <img src="vikas.jpg" alt="Mountains" style="width:100%; aspect-ratio:auto">
+                  <h3>Vikas Vats</h3>
+                  <p style="text-align: justify; text-justify: auto;">Poster Presentation @ EAGE Annual Conference 2024</p>
+                  <p style="text-align: justify; text-justify: auto;">Title: Integrating Particle Swarm Optimization in a Hybrid Approach to Address FWI Non-linearity.</p>
+                </div>
+              </div>
+              
+              <div class="column Conf_part">
+                <div class="content">
+                  <img src="pc.jpg" alt="Mountains" style="width:100%; aspect-ratio:auto">
+                  <h3>Prateek Chougule</h3>
+                  <p style="text-align: justify; text-justify: auto;">Poster Presentation @ EAGE Annual Conference 2024</p>
+                  <p style="text-align: justify; text-justify: auto;">Title: Deep learning assisted 2-D current density modelling of very low frequency electromagnetic data.</p>
+                </div>
+              </div>
+          <!-- END GRID -->
+        </div>
+        <!-- end main -->
+    </div>
+
         <script>
         filterSelection("all")
         function filterSelection(c) {
@@ -138,7 +170,6 @@
           element.className = arr1.join(" ");
         }
         
-        
         // Add active class to the current button (highlight it)
         var btnContainer = document.getElementById("myBtnContainer");
         var btns = btnContainer.getElementsByClassName("btn");
@@ -164,8 +195,8 @@
     <div class="row py-2 header-theme-bottom justify-content-center">
         <div class="col justify-content-center">
             <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">
-                &nbsp;<a href="https://www.iitk.ac.in/es/" target="_blank" style="color: white; text-decoration:solid;"><b>Earth Sciences</a></b>&nbsp;
-                &#124;&nbsp;&nbsp;<a href="https://www.iitk.ac.in/" target="_blank" style="color: white; text-decoration: none;"><b>IIT Kanpur</a></b>&nbsp;
+                <a href="https://www.iitk.ac.in/es/" target="_blank" style="color: white; text-decoration:solid;"><b>Earth Sciences</a></b>
+                <a href="https://www.iitk.ac.in/" target="_blank" style="color: white; text-decoration: none;"><b>IITK</a></b>
             </p>
         </div>
         <span class="text-center">
@@ -178,7 +209,7 @@
             </h6>
         </span>
         <p class="text-center my-1" style="font-family: 'Times New Roman', Times, serif;">
-            &copy; 2024 <a href="" target="_blank" style="color: white; text-decoration: none">EAGE IITK Student Chapter</a>&nbsp;
+            &copy; 2024 <a href="" target="_blank" style="color: white;">EAGE_IITK_Student_Chapter</a>&nbsp;
         </p>
     </div>
 </div>

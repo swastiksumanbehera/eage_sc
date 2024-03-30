@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Document</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../assets/gallery.css">
+<link rel="icon" type="image/x-icon" href="../assets/favicon.jpg">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../assets/colors.css">
+<link href="https://fonts.cdnfonts.com/css/plantin-mt-pro?styles=66100" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://db.onlinewebfonts.com/c/fc609eb62c0de5abdda2d091abaed228?family=Plantin+Infant+MT+Std+Bold" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  /* font-size: 50px; */
+  word-break: break-all;
+}
+
+.row {
+  /* margin: 10px -16px; */
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<!--header-->
+    <!--Check the alignment of the image again (non-responsive)-->
+    <div class="row justify-content-center header-theme-top">
+        <div class="row justify-content-center">
+            <div class="col-2 mx-1 justify-content-center d-none d-lg-block py-2 align-items-center">
+                <img src="../assets/logo.jpeg" alt="eagesc logo" style="height: 90px; width:auto;">
+            </div>
+            <div class="col justify-content-center py-2">
+                <div class="row justify-content-center">
+                    <h1 style="text-align: center; font-family: Plantin Infant MT Std Bold;">
+                        <b>EAGE STUDENT CHAPTER</b>
+                    </h1>
+                </div>
+                <div class="row justify-content-center">
+                    <h4 style="text-align: center; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                        INDIAN INSTITUTE OF TECHNOLOGY KANPUR
+                    </h4>
+                </div>
+            </div>
+            <div class="col-2 mx-1 justify-content-center d-none d-lg-block py-2 align-items-center">
+                <img src="../assets/invisible_logo.png" alt="" style="height: 90px; width:auto;">
+            </div>
+        </div>
+    </div>
+    <!--navbar-->
+    <nav class="navbar navbar-light sticky-top navbar-expand-sm header-theme-top">
+        <a href="../index.html" class="navbar-brand h1 mx-3 d-md-none">
+            <i class="fa-solid fa-house-chimney" style="color: white;"></i>
+        </a>
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="mx-3 navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" style="color: white;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item px-5 d-md-block li_navbar">
+                    <a href="../index.html" class="nav-link a_navbar" style="color: white;">
+                        <b>Home</b>
+                    </a>
+                </li>
+                <li class="nav-item px-5 d-sm-block li_navbar">
+                    <a href="../pages/teams1.html" class="nav-link a_navbar" style="color: white;">
+                        <b>Team</b>
+                    </a>
+                </li>
+                <li class="nav-item px-5 d-sm-block li_navbar">
+                    <a href="../pages/events.html" class="nav-link a_navbar" style="color: white;">
+                        <b>Events</b>
+                    </a>
+                </li>
+                <li class="nav-item px-5 d-sm-block li_navbar active_navbar">
+                    <a href="../pages/gallery.html" class="nav-link a_navbar" style="color: white;">
+                        <b>Gallery</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--header-->
+    <div class="row justify-content-center header-theme-bottom">
+        <div class="col justify-content-center py-2">
+            <h2 style="text-align: center; font-family: Plantin Infant MT Std Bold;">
+                <b>EVENTS GALLERY</b>
+            </h2>
+        </div>
+    </div>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h2>Event Showcase</h2>
+<hr>
+
+<h4 class="t1" style=" text-align: justify; text-justify: inter-word;">Take a look at our event photos to see what we've been doing! Get a glimpse of the learning and immerse yourself in the energy and enthusiasm of our gatherings. Relive the highlights as we showcase the best memories from our engaging and insightful events. </h4>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Talks')"> Talks</button>
+  <button class="btn" onclick="filterSelection('wksp')"> Workshops</button>
+  <button class="btn" onclick="filterSelection('events')"> Fun Events</button>
+  <button class="btn" onclick="filterSelection('Conf_part')"> Conference Participations</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Conf_part">
+    <div class="content">
+      <img src="gourav.png" alt="Mountains" style="width:100%">
+      <h4 style="text-align: center; padding-top: 2vh;">Gourav Jaiswal</h4>
+      <p style="text-align: center; padding-top: 2vh;">Oral Presentation @ EAGE Annual Conference 2024</p>
+      <p style=" text-align: justify; text-justify: inter-word; padding-bottom: 3.2vh;">Title: Advancing Seismic Facies Classification: A comparative Deep Learning Approach.</p>
+    </div>
+  </div>
+  <div class="column Conf_part">
+    <div class="content">
+    <img src="vikas.jpg" alt="Lights" style="width:100%">
+      <h4 style="text-align: center; padding-top: 2vh;">Vikas Vats</h4>
+      <p style="text-align: center; padding-top: 2vh;">Poster Presentation @ EAGE Annual Conference 2024</p>
+      <p style=" text-align: justify; text-justify: inter-word;">Title: Integrating Particle Swarm Optimization in a Hybrid Approach to Address FWI Non-linearity. </p>
+    </div>
+  </div>
+  <div class="column Conf_part">
+    <div class="content">
+    <img src="pc.jpg" alt="Nature" style="width:100%">
+      <h4 style="text-align: center; padding-top: 2vh;">Prateek Chougule</h4>
+      <p style="text-align: center; padding-top: 2vh;">Poster Presentation @ EAGE Annual Conference 2024</p>
+      <p style=" text-align: justify; text-justify: inter-word;">Title: Deep learning assisted 2-D current density modelling of very low frequency electromagnetic data.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+</body>
+<div id="mySidenav" class="sidenav">
+    <a href="mailto: eageiitk@gmail.com" id="about" target="_blank"><i class="fa-solid fa-envelope icon-1" style="color: white;  vertical-align: text-bottom;"></i></a>&nbsp;
+    <a href="https://www.linkedin.com/company/eage-student-chapter-iit-kanpur/" target="_blank" id="blog"><i class="fa-brands fa-linkedin icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
+    <a href="#" target="_blank" id="projects"><i class="fa-brands fa-instagram icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
+    <a href="https://www.facebook.com/profile.php?id=61557370555997" target="_blank" id="face"><i class="fa-brands fa-facebook icon-1" style="color: white; "></i></a>&nbsp;
+    <a href="https://twitter.com/EageIitk84195" target="_blank"id="contact"><i class="fa-brands fa-twitter icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
+</div>
+
+<!--footer-->
+<div class="footer">
+    <div class="row py-2 header-theme-bottom justify-content-center">
+        <div class="col justify-content-center">
+            <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">
+                <a href="https://www.iitk.ac.in/es/" target="_blank" style="color: white; text-decoration:solid;"><b>Earth Sciences</a></b>
+                <a href="https://www.iitk.ac.in/" target="_blank" style="color: white; text-decoration: none;"><b>IITK</a></b>
+            </p>
+        </div>
+        <span class="text-center">
+            <h6 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">
+                <a href="mailto:eageiitk@gmail.com" target="_blank"><i class="fa-solid fa-envelope icon-1" style="color: white;  vertical-align: text-bottom;"></i></a>&nbsp;
+                <a href="https://www.linkedin.com/company/eage-student-chapter-iit-kanpur/" target="_blank"><i class="fa-brands fa-linkedin icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
+                <a href="https://www.facebook.com/profile.php?id=61557370555997" target="_blank"><i class="fa-brands fa-facebook icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
+                <a href="https://twitter.com/EageIitk84195" target="_blank"><i class="fa-brands fa-twitter icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
+            </h6>
+        </span>
+        <p class="text-center my-1" style="font-family: 'Times New Roman', Times, serif;">
+            &copy; 2024 <a href="" target="_blank" style="color: white;">EAGE_IITK_Student_Chapter</a>&nbsp;
+        </p>
+    </div>
+</div>
+</html>
